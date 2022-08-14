@@ -1,0 +1,44 @@
+// base
+@import './base/variables';
+@import './base/mixins';
+
+// components
+@import './components/header', './components/card';
+
+// Pages
+@import './pages/index';
+// @import './components/text';
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+html{
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+body{
+    scroll-behavior: smooth;
+}
+
+.main{
+    .header{
+        width: 100%;
+        max-width: 1400px;
+        height: 15vh;
+        padding: 15px 0;
+        position: fixed;
+        z-index: 9;
+        background: transparent;
+    }
+    .scrolled_nav{
+        width: 100%;
+        max-width: 1400px;
+        background: rgb(255, 255, 255);
+        transition: .5s ease-in-out;
+        box-shadow: 0 0 15px rgb(219, 219, 219);
+    }
+}

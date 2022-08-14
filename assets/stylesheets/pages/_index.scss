@@ -1,0 +1,241 @@
+.landing {
+
+  .home {
+    width: 100%;
+    height: 100vh;
+
+
+    .hooper {
+      width: 100%;
+      height: 100%;
+
+
+      .slider1 {
+        width: 100%;
+        height: 100%;
+        background-image: url('./../images/home/1.png');
+        background-size: 100% 100%;
+
+
+        .content {
+          width: 90%;
+          margin: 0 auto;
+          padding-top: 100px;
+          height: 100px;
+
+
+          .title {
+            font-weight: 600;
+            font-size: 80px;
+            color: $text_color;
+          }
+
+          .sub_title {
+            margin-top: 20px;
+            font-weight: 600;
+            font-size: 40px;
+            color: $text_color;
+          }
+
+          .info {
+            margin-top: 450px;
+            // border-left: 2px solid $text_color;
+            padding-left: 100px;
+            width: 500px;
+
+
+
+            p {
+              font-weight: 900;
+              font-size: 50px;
+              line-height: 40px;
+              color: rgb(0, 0, 0);
+              width: max-content;
+
+            }
+
+            .btn {
+              margin-top: 20px;
+              background: linear-gradient(180deg, #ab6fd9 0%, #7329b9 100%);
+              border-radius: 11px;
+              padding: 18px 40px;
+              color: $text_color;
+              font-weight: 500;
+              font-size: 18px;
+              line-height: 10px;
+              border: none;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+
+      .slider2 {
+        background: url('./../images/home/2.png') !important;
+        background-size: 100% 100% !important;
+      }
+
+      .slider3 {
+        background: url('./../images/home/3.png') !important;
+        background-size: 100% 100% !important;
+      }
+    }
+  }
+
+
+
+  .story {
+    width: 100%;
+    height: auto;
+    // background: red;
+    padding-top: 125px;
+    margin-top: 25px;
+    width: 1211px;
+    left: 0px;
+    background: #FFF4DA;
+
+    .sapak_img {
+      position: absolute;
+      left: 15.68%;
+      top: 35.82%;
+      // bottom: 61.58%;
+      margin-top: 460px;
+      text-align: center;
+    }
+
+    .bal_img {
+      position: absolute;
+      left: 45.68%;
+      top: 35.82%;
+      // bottom: 61.58%;
+      margin-top: 430px;
+      text-align: center;
+    }
+
+    .sowda_img {
+      position: absolute;
+      left: 75.68%;
+      top: 35.82%;
+      // bottom: 61.58%;
+      margin-top: 460px;
+      text-align: center
+    }
+
+
+
+
+    .title {
+      @include flexBox(center, center);
+
+
+
+      p {
+        width: 400px;
+        font-weight: 700;
+        font-size: 38px;
+        line-height: 40px;
+        color: $main_color;
+        text-align: center;
+      }
+
+
+
+
+    }
+
+    .cards {
+      width: 90%;
+      padding-top: 80px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      grid-column-gap: 20px;
+    }
+
+
+
+
+  }
+
+  .mazmun {
+    @include flexBox(space-between, center);
+    width: 90%;
+    margin-top: 60px;
+
+    .left {
+      width: 50%;
+    }
+
+    .right {
+      width: 36%;
+
+      .title {
+        width: 292px;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 50px;
+        color: black;
+      }
+
+      .info {
+        margin-top: 20px;
+        width: 400px;
+        font-weight: 300;
+        font-size: 30px;
+        line-height: 38px;
+        color: black;
+      }
+
+      .btn {
+        margin-top: 20px;
+        padding: 10px 30px;
+        background-color: black;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 38px;
+        color: white;
+        border-radius: 5px;
+      }
+
+    }
+  }
+
+  .chosen {
+    width: 100%;
+    height: auto;
+    background: #F0F0F0;
+
+    .top {
+      padding-top: 40px;
+      width: 90%;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .title {
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 120%;
+        color: red;
+      }
+
+      a {
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 120%;
+        color: black;
+      }
+    }
+
+    .cards{
+      width: 90%;
+      margin: 24px auto 0;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(559px, 1fr));
+      grid-column-gap: 82px;
+      grid-row-gap: 37px;
+    }
+  }
+
+}
